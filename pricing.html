@@ -18,28 +18,62 @@
     <body>
     
 <!-- ################# Header Starts Here#######################--->
-    <header>
-        <div id="nav-head" class="header-nav">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-sm-12 nav-img">
-                        <img src="assets/images/logo.png" alt="">
-                        <a data-toggle="collapse" data-target="#menu" href="#menu"><i class="fas d-block d-md-none small-menu fa-bars"></i></a>
-                    </div>
-                    <div id="menu" class="col-md-9 d-none d-md-block nav-item">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about_us.html">About Us</a></li>
-                            <li><a href="services.html">Services</a></li>
-                            <li><a href="pricing.html">Pricing</a></li>
-                            <li><a href="contact_us.html">Contact Us</a></li>
-                        </ul>
-                    </div>
-                </div>
-
+<header>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand text-primary" href="#">
+              Express Steam Service
+            </a>
+            <button class="navbar-toggler" type="button" 
+                    data-toggle="collapse"
+                    data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+  
+            <div class="collapse navbar-collapse" 
+                 id="navbarSupportedContent">
+                <ul class=" nav navbar-nav navbar-center">
+                    <li class="nav-item active">
+                        <a class="nav-link" 
+                           href="index.html">
+                          Hem 
+                          <span class="sr-only">
+                            (current)
+                          </span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" 
+                           href="services.html">
+                          Våra tjänster
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" 
+                           href="pricing.html">
+                          Pris
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" 
+                           href="about_us.html">
+                          Om oss
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" 
+                           href="contact_us.html">
+                          Kotakta oss
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </header>
+    </nav>
+</header>
   
        <!--  ************************* Page Title Starts Here ************************** -->
                <div class="page-nav no-margin row">
@@ -67,117 +101,30 @@
       <!-- ################# Key Features Starts Here#######################--->
 
       <section class="latest-features">
-        <div class="container">
-            <div class="inner-title">
-
-                <h2> Vara tjänster</h2>
-                <p>Take a look at some of latest features and services provided by our team</p>
-            </div>
-
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <div class="single-feature">
-                       <img src="assets/images/services/clean1.jpg" alt="">
-                       <div class="bn-dgt">
-                        <i class="fas fa-hospital-alt"></i>
-                        <h5>Fönsterputsning</h5>
-                        <p>High Performanc Lorem ipsum dolor sit amet, consectetur adipiscing consectetur adipiscing elit. Donec ut erat nec leo lobortis blandit.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-sm-6">
-                    <div class="single-feature">
-                       <img src="assets/images/services/clean2.jpg" alt="">
-                       <div class="bn-dgt">
-                        <i class="fas fa-user-md"></i>
-                        <h5>Fönsterbänker</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ipsum dolor sit amet, consectetur ut erat nec leo lobortis blandit.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-sm-6">
-                    <div class="single-feature">
-                       <img src="assets/images/services/clean3.jpg" alt="">
-                       <div class="bn-dgt">
-                        <i class="fas fa-briefcase-medical"></i>
-                        <h5>Fönsterkarmar Insida</h5>
-                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ipsum dolor sit amet, consectetur ut erat nec leo lobortis blandit.</p>
-                        </div>
-                    </div>
-                </div>
-                  <div class="col-md-3 col-sm-6">
-                    <div class="single-feature">
-                       <img src="assets/images/services/clean4.jpg" alt="">
-                       <div class="bn-dgt">
-                            <i class="fas fa-briefcase-medical"></i>
-                            <h5>Element städning</h5>
-                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ipsum dolor sit amet, consectetur ut erat nec leo lobortis blandit.</p>
-                         </div>
-                    </div>
-                </div>    
-
-            </div>
-                
-        </div>
+        <h1>In this page we will add the price</h1>
 
     </section>
         
 <!-- ################# Footer Starts Here#######################--->
-
-
-    <footer class="footer">
+<div class="footer-clean">
+    <footer>
         <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-12">
-                    <h2>About Us</h2>
-                    <p>
-                        Smart Eye is a leading provider of information technology, consulting, and business process services. Our dedicated employees offer strategic insights, technological expertise and industry experience.
-                    </p>
-                    <p>We focus on technologies that promise to reduce costs, streamline processes and speed time-to-market, Backed by our strong quality processes and rich experience managing global... </p>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <h2>Useful Links</h2>
-                    <ul class="list-unstyled link-list">
-                        <li><a ui-sref="about" href="#/about">About us</a><i class="fa fa-angle-right"></i></li>
-                        <li><a ui-sref="portfolio" href="#/portfolio">Portfolio</a><i class="fa fa-angle-right"></i></li>
-                        <li><a ui-sref="products" href="#/products">Latest jobs</a><i class="fa fa-angle-right"></i></li>
-                        <li><a ui-sref="gallery" href="#/gallery">Gallery</a><i class="fa fa-angle-right"></i></li>
-                        <li><a ui-sref="contact" href="#/contact">Contact us</a><i class="fa fa-angle-right"></i></li>
+            <div class="row justify-content-center">
+                <div class="col-sm-4 col-md-3 item">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Service 1</a></li>
+                        <li><a href="#">Service 2</a></li>
+                        <li><a href="#">Service 3</a></li>
                     </ul>
                 </div>
-                <div class="col-md-4 col-sm-12 map-img">
-                    <h2>Contact Us</h2>
-                    <address class="md-margin-bottom-40">
-                        BlueDart <br>
-                        Marthandam (K.K District) <br>
-                        Tamil Nadu, IND <br>
-                        Phone: +91 9159669599 <br>
-                        Email: <a href="mailto:info@anybiz.com" class="">info@bluedart.in</a><br>
-                        Web: <a href="smart-eye.html" class="">www.bluedart.in</a>
-                    </address>
-
+                <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
+                    <p class="copyright">Express Steam Service</p>
                 </div>
             </div>
         </div>
-        
-
     </footer>
-    <div class="copy">
-            <div class="container">
-                <a href="https://www.smarteyeapps.com/">2015 &copy; All Rights Reserved | Designed and Developed by Smarteyeapps</a>
-                
-                <span>
-                <a><i class="fab fa-github"></i></a>
-                <a><i class="fab fa-google-plus-g"></i></a>
-                <a><i class="fab fa-pinterest-p"></i></a>
-                <a><i class="fab fa-twitter"></i></a>
-                <a><i class="fab fa-facebook-f"></i></a>
-        </span>
-            </div>
-
-        </div>   
+</div>
     
     </body>
 
