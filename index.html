@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Express steam service</title>
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
@@ -223,24 +224,21 @@
             </div>
             <div class="row justify-content-center" data-aos="fade-down" data-aos-delay="250">
                 <div class="col-lg-8">
-                    <form action="#" class="row g-3 p-lg-5 p-4 bg-white theme-shadow">
+                    <form id="contact-form" method="POST" action="sendEmail.php" class="row g-3 p-lg-5 p-4 bg-white theme-shadow">
                         <div class="form-group col-lg-6">
-                            <input type="text" class="form-control" placeholder="Enter first name">
-                        </div>
-                        <div class="form-group col-lg-6">
-                            <input type="text" class="form-control" placeholder="Enter last name">
+                            <input name="name" required type="text" class="form-control" placeholder="Enter your name">
                         </div>
                         <div class="form-group col-lg-12">
-                            <input type="email" class="form-control" placeholder="Enter Email address">
+                            <input  name="subject" required  type="subject" class="form-control" placeholder="Enter subject">
                         </div>
                         <div class="form-group col-lg-12">
-                            <input type="text" class="form-control" placeholder="Enter subject">
+                            <input  name="email" required  type="email" class="form-control" placeholder="Enter Email address">
                         </div>
                         <div class="form-group col-lg-12">
-                            <textarea name="message" rows="5" class="form-control" placeholder="Enter Message"></textarea>
+                            <textarea type= "text" name="message" required rows="5" class="form-control" placeholder="Enter Message"></textarea>
                         </div>
                         <div class="form-group col-lg-12 d-grid">
-                            <button class="btn btn-brand">Send Message</button>
+                            <button type="submit" class="btn btn-brand">Send Message</button>
                         </div>
                     </form>
                 </div>
