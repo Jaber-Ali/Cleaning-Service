@@ -6,7 +6,7 @@ $message = $_POST['message'];
 
 $mailheader = "From:".$name."<".$email.">\r\n";
 
-$recipient = "saleh-hassan1@outlook.com";
+$recipient = "info@expresswashing.se";
 
 mail($recipient, $subject, $message, $mailheader) or die("Error!");
 header("Location:success.html");
